@@ -1,0 +1,31 @@
+.search-results__card-container{
+    max-width: 200px;
+}
+
+.search-results__card {
+    width: 200px;
+    height: 200px;
+    overflow: hidden; 
+}
+
+.search-results__card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.search-results__card-image:hover {
+    opacity:0.5;
+}
+
+.search-results__card-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.search-results__card-title:hover {
+    opacity:0.5;
+}

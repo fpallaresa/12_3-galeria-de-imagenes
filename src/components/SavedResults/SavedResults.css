@@ -1,0 +1,12 @@
+.saved-results {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.saved-results__cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}

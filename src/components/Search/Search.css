@@ -1,0 +1,11 @@
+.header__search-input {
+    height: 20px;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 0.3px solid #b0afaf;
+}
+
+.header__search-input:focus {
+    border: 0.3px solid #b0afaf;
+}
