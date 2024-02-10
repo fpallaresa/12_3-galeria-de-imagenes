@@ -37,7 +37,7 @@ const SearchResults = () => {
           </div>
         </>
       ) : (
-        <p className="search-results__no-info">Introduce al menos 3 caracteres</p>
+        <p className="search-results__no-info">Introduce un texto de búsqueda y pulsa Enter</p>
       )}
     </div>
   );

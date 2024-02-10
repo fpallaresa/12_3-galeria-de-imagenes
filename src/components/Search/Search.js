@@ -7,14 +7,16 @@ const Search = () => {
   const [searchText, setSearchText] = React.useState("");
 
   const handleInputChange = (event) => {
-    const newText = event.target.value;
-    setSearchText(newText);
-    if (newText.trim() !== "") {
-      searchValue.updateSearchInfo(newText);
-    }
+    setSearchText(event.target.value);
   };
 
-  console.log("Estoy añadiendo texto en el input:" + searchText);
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      if (searchText.trim() !== "") {
+        searchValue.updateSearchInfo(searchText);
+      }
+    }
+  };
 
   return (
     <div className="header__search">
@@ -22,8 +24,9 @@ const Search = () => {
         className="header__search-input"
         placeholder="Introduce un texto de búsqueda"
         type="text"
-        defaultValue={searchText}
+        value={searchText}
         onChange={handleInputChange}
+        onKeyDown={handleKeyDown}
       />
     </div>
   );
